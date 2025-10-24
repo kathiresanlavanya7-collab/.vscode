@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Plagiarism Detector</title>
+  <link rel="stylesheet" href="das.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Educator Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </nav>
+
+  <main class="dashboard">
+    <section class="summary">
+      <div class="card">
+        <h3>Pending Review</h3>
+        <p class="big-number">12</p>
+        <p>High Risk: 5</p>
+      </div>
+      <div class="card">
+        <h3>Average Score</h3>
+        <p class="big-number">23%</p>
+        <p>Plagiarism Similarity</p>
+      </div>
+    </section>
+
+    <section class="priority">
+      <h2>Priority Review</h2>
+      <div class="review-list">
+        <div class="review-card high">
+          <div>
+            <h4>Analysis of The Great Gatsby</h4>
+            <p>Literature</p>
+          </div>
+          <span>45% Match</span>
+        </div>
+        <div class="review-card medium">
+          <div>
+            <h4>Quantum Mechanics Problem Set</h4>
+            <p>Physics</p>
+          </div>
+          <span>22% Match</span>
+        </div>
+        <div class="review-card low">
+          <div>
+            <h4>Renaissance Art History</h4>
+            <p>History</p>
+          </div>
+          <span>5% Match</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | NLP Project</title>
+  <style>
+    body, html {
+      margin:0; padding:0; font-family:'Poppins', sans-serif; background:#f5f7fa;
+    }
+
+    header {
+      background: #667eea; color:white; padding:20px; text-align:center; font-size:24px;
+      box-shadow:0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width:500px; margin:40px auto; padding:20px;
+      background:white; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 { color:#333; margin-bottom:20px; text-align:center; }
+    p { margin:10px 0; font-size:16px; color:#555; }
+    .status {
+      display:inline-block; padding:5px 12px; border-radius:10px; font-weight:bold; font-size:14px; color:white;
+    }
+    .status.submitted { background:#28a745; } /* green */
+    .status.pending { background:#ffc107; } /* yellow */
+    .status.plagiarism { background:#dc3545; } /* red */
+    .status.low { background:#17a2b8; } /* blue */
+    .status.active { background:#00bfff; } /* blue */
+    .status.inactive { background:#16558d; } /* grey */
+  </style>
+</head>
+<body>
+
+<header>🧠 NLP Student Dashboard</header>
+
+<div class="container">
+  <h2>Student: Lisa</h2>
+  <p>Assignment Submission: <span class="status submitted">Submitted</span></p>
+  <p>Plagiarism Score: <span class="status low">0.15</span></p>
+  <p>Ethical Score: <span class="status low">0.85</span></p>
+  <p>Account Status: <span class="status active">Active</span></p>
+</div>
+
+</body>
+</html>

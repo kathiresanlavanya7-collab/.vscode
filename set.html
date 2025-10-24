@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings Panel</title>
+  <link rel="stylesheet" href="set.css">
+</head>
+<body>
+
+  <div class="settings-container">
+    <h2>Settings</h2>
+
+    <div class="tabs">
+      <button class="active">Detection</button>
+      <button>Integrations</button>
+      <button>Reports</button>
+    </div>
+
+    <div class="section">
+      <h3>Sensitivity Levels</h3>
+
+      <div class="slider-row">
+        <label>Plagiarism Detection</label>
+        <span>Medium</span>
+      </div>
+      <input type="range" min="0" max="100" value="50" class="slider">
+
+      <div class="slider-row">
+        <label>AI Content Detection</label>
+        <span>High</span>
+      </div>
+      <input type="range" min="0" max="100" value="90" class="slider">
+    </div>
+
+    <div class="section">
+      <h3>Exclusions</h3>
+
+      <div class="toggle-row">
+        <span>Ignore Quoted Text</span>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider-toggle"></span>
+        </label>
+      </div>
+
+      <div class="toggle-row">
+        <span>Exclude Bibliography</span>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider-toggle"></span>
+        </label>
+      </div>
+
+      <div class="toggle-row">
+        <span>Enable Self-Plagiarism Check</span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider-toggle"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="footer">
+      <button class="reset-btn">Reset to Defaults</button>
+      <button class="save-btn">Save Changes</button>
+    </div>
+  </div>
+
+</body>
+</html>

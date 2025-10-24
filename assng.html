@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Assignment</title>
+  <link rel="stylesheet" href="as.css">
+</head>
+<body>
+
+  <div class="upload-card">
+    <h2>Upload Assignment</h2>
+
+    <div class="file-box" onclick="document.getElementById('fileInput').click()">
+      <input type="file" id="fileInput" multiple hidden>
+      <p>📄 Tap to select a file<br><span>Max file size: 25MB</span></p>
+      <button>Browse Files</button>
+    </div>
+
+    <p class="formats">Supported formats: <span>PDF</span> <span>DOCX</span> <span>TXT</span></p>
+
+    <input type="text" id="linkInput" placeholder="https://docs.google.com/...">
+    
+    <div id="fileList" class="file-list"></div>
+
+    <button id="checkBtn">Check for Plagiarism</button>
+  </div>
+
+  <script src="ran.js"></script>
+</body>
+</html>

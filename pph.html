@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plagiarism Detector | NLP Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 NLP Plagiarism Detector</h1>
+    <p>Detect copied or paraphrased content using AI</p>
+
+    <div class="input-section">
+      <label for="assignment">Paste your assignment text:</label>
+      <textarea id="assignment" placeholder="Paste text here..."></textarea>
+
+      <div class="file-upload">
+        <label for="fileUpload">or Upload a file (.txt):</label>
+        <input type="file" id="fileUpload" accept=".txt" />
+      </div>
+
+      <button id="checkBtn">Check Plagiarism</button>
+    </div>
+
+    <div class="output-section">
+      <h2>📊 Result:</h2>
+      <pid="resultText">No result yet...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
